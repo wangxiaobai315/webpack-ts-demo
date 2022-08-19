@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.main {
+  width: 360px;
+  height: 420px;
+  border: 10px solid khaki;
+  border-radius: 20px;
+  margin: 50px auto;
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .area {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  position: relative;
+}
+.main .area .snake > div {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border: 1px solid pink;
+  position: absolute;
+}
+.main .area .food {
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  width: 10px;
+  height: 10px;
+  border: 1px transparent solid;
+}
+.main .area .food > div {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  transform: rotate(45deg);
+  float: left;
+}
+.main .score {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .score > div {
+  font-weight: bold;
+  font-size: 20px;
+}
